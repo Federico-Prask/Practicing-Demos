@@ -6,7 +6,10 @@
   "description": "My Electron application description",
   "keywords": [],
   "license": "MIT",
-  "author": "lsoi2025_06",
+  "author": {
+    "name": "Federico_Prask",
+    "email": "2192104525@qq.com"
+  },
   "main": ".vite/build/main.cjs",
   "scripts": {
     "start": "electron-forge start",
@@ -29,33 +32,23 @@
     "@electron/fuses": "^2.1.3",
     "@types/electron-squirrel-startup": "^1.0.2",
     "@vitejs/plugin-vue": "^6.0.10",
-    "electron": "^45.0.0",
+    "electron": "45.1.0",
     "typescript": "^6.0.3",
     "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0",
+    "vite-plugin-vuetify": "^2.1.3",
     "vite-plus": "1.4.0"
   },
   "dependencies": {
-    "dompurify": "^3.4.17",
-    "electron": "^45.0.0",
+    "@nuxt/ui": "^4.12.0",
+    "@primeuix/themes": "^3.1.0",
     "electron-squirrel-startup": "^1.0.1",
-    "markdown-it": "^15.0.3",
-    "vue": "^3.5.44"
+    "primevue": "^5.0.4",
+    "reka-ui": "^2.11.0",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.44",
+    "vuetify": "^4.3.1"
   },
   "overrides": {
     "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0"
-  },
-  "devEngines": {
-    "packageManager": [
-      {
-        "name": "pnpm",
-        "version": "12.15.0",
-        "onFail": "download"
-      },
-      {
-        "name": "npm",
-        "version": "12.2.1",
-        "onFail": "download"
-      }
-    ]
   }
 }
