@@ -1,6 +1,7 @@
-// oxlint-disable eslint-plugin-unicorn/no-empty-file
-// See the Electron documentation for details on how to use preload scripts:
-// https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts
+/*
+preload.ts
+用于 handle Preload 上下文 在隔离的渲染环境与主进程之间提供受控接口
+*/
 
 import { contextBridge, ipcRenderer } from 'electron';
 

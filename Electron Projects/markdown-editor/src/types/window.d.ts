@@ -3,7 +3,7 @@ export {};
 
 // 声明对全局的指定类型进行扩展
 declare global {
-	// interface 是 Typescript 的类型声明符
+  // interface 是 Typescript 的类型声明符
   /*
   Window 是 TS 标准库中的一个类型。具有类似如下的声明：
   interface Window {

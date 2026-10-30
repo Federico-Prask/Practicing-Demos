@@ -1,12 +1,33 @@
 <!doctype html>
 <html lang="zh-CN">
   <head>
+    <!-- 说明当前 html 的字符编码集为 UTF-8 -->
     <meta charset="UTF-8" />
+    <!-- 
+      viewport 可以理解为内容的可视区域
+      content="width=device-width, initial-scale=1.0"
+      width = device-width 表示设置为设备页面宽度
+      这个配置可以让我们更加方便地进行相应式布局页面设计
+      可以自由的在移动设备屏幕尺寸与桌面屏幕尺寸所对应的布局之间切换。
+      注意，device-width 指设备对应的 CSS 像素宽度，而非物理像素量。
+      initial-scale=1.0 表示页面初始缩放比例为 1.0:1，即 100%。
+      也就是说，如果是 =0.5 就是 50%。
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Notes</title>
   </head>
   <body>
     <div id="app"></div>
+    <!--
+      <script> 标签声明插入一段脚本
+      type="module" 告诉 Chrome（或 Chromium 内核）
+      使用加载 ES Module（JS 模块）的方式导入 JS/TS 脚本。
+      src="/src/renderer.ts" 表示从外部引用一个路径为
+      "src/renderer.ts" 的 TypeScript 脚本。
+
+      模块脚本默认具有延迟执行（defer）的行为，
+      它会在HTML 文档解析完成后再执行，因此不需要额外添加 defer 属性。
+    -->
     <script type="module" src="/src/renderer.ts"></script>
   </body>
 </html>
